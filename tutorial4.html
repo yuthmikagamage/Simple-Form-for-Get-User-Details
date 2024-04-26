@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Tutorial 4</title>
+        <style> h1{text-align: center;} body{font-family: Arial, Helvetica, sans-serif;} 
+        fieldset:nth-of-type(1){background-color: rgb(151, 198, 239); padding: 1em;border-radius: 15px;margin-bottom: 1em;} 
+        fieldset:nth-of-type(2){background-color: rgb(235, 230, 170); padding: 1em;border-radius: 15px;margin-bottom: 1em;} 
+        fieldset:nth-of-type(3){background-color: rgb(171, 126, 58); padding-left: 25cm;border-radius: 15px;margin-bottom: 1em;}
+        label{float: left; margin-right: 1em; width: 10em;}/* Seting every labels width is 10 it becomes inline when all labels one size*/
+        input, select, textarea {margin-bottom: 0.5em;} legend{font-weight: bold;} 
+        input[type="submit"],
+        input[type="reset"] {
+        background-color: #98d7fc; 
+        color: white;
+        padding: 10px 20px; 
+        border: white;
+        border-radius: 10%;}</style>
+    </head>
+    <body> 
+        <h1> Hotel Reservation</h1>
+        <form>
+            <fieldset>
+                <legend> Personal Details</legend>
+                <label for="name"> First Name: </label>
+                <input type="text" name="firstname" id="first" placeholder="Enter Your First Name" ><br>
+                <label for="surname" > Surname : </label>
+                <input type="text" name="sur" id="surna" placeholder="Enter your Surname"><br>
+                <label for="email"> Email Adress : </label>
+                <input type="email" name="emaild" id="email"><br>
+                <label for="password"> Setup a Password : </label>
+                <input type="password" name="pin" id="pass" size="60" placeholder="Min 8 characters, use at least 1 caps, no special characters">
+            </fieldset>
+            <fieldset>
+                <legend>Booking Details</legend>
+                <label for="check"> CheckIn day : </label>
+                <input type="date" name="date" id="dates" value="2023-02-14"><br>
+                <label for="noofdays"> Number of days : </label>
+                <input type="number" name="days" id="das"><br>
+                <input type="radio" name="single" id="sing">
+                <label for="sing"> Single Room</label><br>
+                <input type="radio" name="double" id="dou">
+                <label for="dou"> Double Room</label><br>
+                <input type="radio" name="king" id="kin">
+                <label for="kin"> King Room</label> <br>
+                <label for="breakfast"> Breakfast</label>
+                <select name="breakfast" id="popout">
+                    <option value="include"> Include</option>
+                    <option value="not"> Not Include</option>
+                </select><br>
+
+                <label for="special"> Special Requriemts : </label>
+                <textarea id="text" name="text" rows="5" cols="20" placeholder="Please provide any special requirements"></textarea>
+                
+                
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="submit" value="Submit" >
+                <input type="reset" name="rese" value="Reset">
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
